@@ -1,19 +1,23 @@
 export const faq = [
   {
-    q: 'What does AppyDiet cost?',
-    a: 'Pricing varies by plan and is shown in the app before you start using the tracking tools.',
+    q: 'What does OnlyHer cost?',
+    a: 'OnlyHer is free to download. Available plans, premium features, and pricing are always shown clearly in the app before purchase.',
   },
   {
-    q: 'What kind of meal photos work best?',
-    a: 'Clear, well-lit photos of a single meal or plate help the AI identify foods and estimate nutrition more accurately.',
+    q: 'What can I talk about with my AI girlfriend?',
+    a: 'Talk about your day, flirt, joke, roleplay, share thoughts, or settle in for a romantic conversation. Each character responds in her own style.',
   },
   {
-    q: 'Can I add foods manually too?',
-    a: 'Yes. You can search foods manually or scan barcodes whenever a photo is not the fastest option.',
+    q: 'Can I make my own AI girlfriend?',
+    a: 'Yes. You can customize her appearance and shape personality traits such as confidence, playfulness, warmth, and relationship style.',
   },
   {
-    q: 'Can I track progress over time?',
-    a: 'Yes. AppyDiet is designed for calorie tracking, macro progress, nutrition analytics, and comparing how your habits change over time.',
+    q: 'How do voice calls work?',
+    a: 'Start a call from a companion’s profile or chat to hear her character-specific voice and continue your conversation in a more immersive way.',
+  },
+  {
+    q: 'Is OnlyHer a real person?',
+    a: 'No. Every OnlyHer companion is AI-generated. The experience is designed for entertainment and companionship, not as a substitute for real-world relationships or professional support.',
   },
   {
     q: 'How do I get support?',

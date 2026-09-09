@@ -1,44 +1,44 @@
 export const features = [
   {
-    icon: '📸',
-    title: 'AI Meal Scanning',
+    icon: '✦',
+    title: 'Natural AI Girlfriend Chat',
     description:
-      'Take a photo of your meal and let AppyDiet identify the foods, estimate calories, and break down the macros.',
+      'Move beyond scripted replies with conversations that feel fluid, responsive, playful, and uniquely yours.',
   },
   {
-    icon: '🔥',
-    title: 'Calorie Tracking',
+    icon: '☾',
+    title: 'Immersive Voice Calls',
     description:
-      'See your daily calorie total, remaining calories, and how each meal moves you closer to your target.',
+      'Hear your companion’s voice and enjoy personal calls that make every interaction feel closer than text alone.',
   },
   {
-    icon: '🥗',
-    title: 'Macro Tracking',
+    icon: '◈',
+    title: 'Distinct Personalities',
     description:
-      'Track protein, carbohydrates, and fat automatically so you can stay consistent without manual math.',
+      'Meet sweet, flirty, shy, dominant, adventurous, caring, romantic, and mysterious characters with their own style.',
   },
   {
-    icon: '🔎',
-    title: 'Food Search',
+    icon: '✷',
+    title: 'Flirting & Roleplay',
     description:
-      'Search foods manually when you need to, then add them to your log in just a few taps.',
+      'Set the mood for playful banter, romantic conversations, imaginative roleplay, or a quiet talk about your day.',
   },
   {
-    icon: '📦',
-    title: 'Barcode Scanning',
+    icon: '◇',
+    title: 'Create Your Own Girlfriend',
     description:
-      'Scan packaged foods to capture nutrition quickly when a photo is not the fastest option.',
+      'Personalize her appearance, personality, energy, and relationship style to create a companion made for you.',
   },
   {
-    icon: '🎯',
-    title: 'Personalized Goals',
+    icon: '∞',
+    title: 'Ongoing Connection',
     description:
-      'Get calorie and macro goals tailored to weight loss, maintenance, gain, or better nutrition awareness.',
+      'Return to conversations that continue over time, so every hello feels like picking up where you left off.',
   },
   {
-    icon: '📈',
-    title: 'Nutrition Analytics',
+    icon: '◉',
+    title: 'Character Photos & Media',
     description:
-      'Monitor trends, meal patterns, and progress over time so you can stay consistent with less effort.',
+      'Receive character photos and immersive media where supported, bringing more personality to your shared moments.',
   },
 ];

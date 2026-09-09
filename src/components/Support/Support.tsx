@@ -47,7 +47,7 @@ export function Support() {
   };
 
   return (
-    <section id="support" className="bg-white py-24">
+    <section id="support" className="bg-[#090711] py-24">
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
@@ -55,14 +55,14 @@ export function Support() {
           viewport={{ once: true }}
         >
           <div className="mb-12 text-center">
-            <div className="mb-4 text-5xl">💬</div>
-            <h2 className="mb-4 text-4xl font-black text-slate-900 md:text-5xl">Get in touch</h2>
-            <p className="text-xl text-slate-600">
-              Questions about AppyDiet? We&apos;re here to help.
+            <div className="mb-4 text-4xl text-[#F13BB5]">◇</div>
+            <h2 className="mb-4 text-4xl font-black text-white md:text-5xl">Get in touch</h2>
+            <p className="text-xl text-[#AAA1B8]">
+              Questions about OnlyHer? We&apos;re here to help.
             </p>
           </div>
 
-          <div className="rounded-3xl border border-emerald-100 bg-[#fbfffa] p-8 md:p-12">
+          <div className="rounded-3xl border border-white/10 bg-[#15101F] p-8 shadow-[0_24px_70px_rgba(0,0,0,0.22)] md:p-12">
             <form onSubmit={handleSubmit} className="space-y-6">
               <input
                 type="text"
@@ -75,7 +75,7 @@ export function Support() {
                 aria-hidden="true"
               />
               <div>
-                <label htmlFor="name" className="mb-2 block text-sm font-semibold text-slate-900">
+                <label htmlFor="name" className="mb-2 block text-sm font-semibold text-white">
                   Name
                 </label>
                 <input
@@ -86,10 +86,10 @@ export function Support() {
                   onChange={(e) => updateField('name', e.target.value)}
                   aria-invalid={Boolean(fieldErrors.name)}
                   aria-describedby={fieldErrors.name ? 'name-error' : undefined}
-                  className={`w-full rounded-xl border bg-white px-4 py-3 text-slate-900 transition-colors placeholder:text-slate-400 focus:ring-2 focus:ring-[#62C743]/30 focus:ring-offset-2 focus:ring-offset-white ${
+                  className={`w-full rounded-xl border bg-[#0D0915] px-4 py-3 text-white transition-colors placeholder:text-[#6F687B] focus:ring-2 focus:ring-[#F13BB5]/30 focus:ring-offset-2 focus:ring-offset-[#15101F] ${
                     fieldErrors.name
                       ? 'border-rose-500/70 focus:border-rose-500'
-                      : 'border-emerald-100 focus:border-[#62C743]/50'
+                      : 'border-white/10 focus:border-[#F13BB5]/50'
                   }`}
                   placeholder="Your name"
                   disabled={isSubmitting}
@@ -102,7 +102,7 @@ export function Support() {
               </div>
 
               <div>
-                <label htmlFor="email" className="mb-2 block text-sm font-semibold text-slate-900">
+                <label htmlFor="email" className="mb-2 block text-sm font-semibold text-white">
                   Email
                 </label>
                 <input
@@ -113,10 +113,10 @@ export function Support() {
                   onChange={(e) => updateField('email', e.target.value)}
                   aria-invalid={Boolean(fieldErrors.email)}
                   aria-describedby={fieldErrors.email ? 'email-error' : undefined}
-                  className={`w-full rounded-xl border bg-white px-4 py-3 text-slate-900 transition-colors placeholder:text-slate-400 focus:ring-2 focus:ring-[#62C743]/30 focus:ring-offset-2 focus:ring-offset-white ${
+                  className={`w-full rounded-xl border bg-[#0D0915] px-4 py-3 text-white transition-colors placeholder:text-[#6F687B] focus:ring-2 focus:ring-[#F13BB5]/30 focus:ring-offset-2 focus:ring-offset-[#15101F] ${
                     fieldErrors.email
                       ? 'border-rose-500/70 focus:border-rose-500'
-                      : 'border-emerald-100 focus:border-[#62C743]/50'
+                      : 'border-white/10 focus:border-[#F13BB5]/50'
                   }`}
                   placeholder="your@email.com"
                   disabled={isSubmitting}
@@ -129,7 +129,7 @@ export function Support() {
               </div>
 
               <div>
-                <label htmlFor="message" className="mb-2 block text-sm font-semibold text-slate-900">
+                <label htmlFor="message" className="mb-2 block text-sm font-semibold text-white">
                   Message
                 </label>
                 <textarea
@@ -140,10 +140,10 @@ export function Support() {
                   onChange={(e) => updateField('message', e.target.value)}
                   aria-invalid={Boolean(fieldErrors.message)}
                   aria-describedby={fieldErrors.message ? 'message-error' : undefined}
-                  className={`w-full resize-none rounded-xl border bg-white px-4 py-3 text-slate-900 transition-colors placeholder:text-slate-400 focus:ring-2 focus:ring-[#62C743]/30 focus:ring-offset-2 focus:ring-offset-white ${
+                  className={`w-full resize-none rounded-xl border bg-[#0D0915] px-4 py-3 text-white transition-colors placeholder:text-[#6F687B] focus:ring-2 focus:ring-[#F13BB5]/30 focus:ring-offset-2 focus:ring-offset-[#15101F] ${
                     fieldErrors.message
                       ? 'border-rose-500/70 focus:border-rose-500'
-                      : 'border-emerald-100 focus:border-[#62C743]/50'
+                      : 'border-white/10 focus:border-[#F13BB5]/50'
                   }`}
                   placeholder="Tell us how we can help..."
                   disabled={isSubmitting}
@@ -158,7 +158,7 @@ export function Support() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full rounded-xl bg-gradient-to-r from-[#62C743] to-[#55C936] px-8 py-4 font-bold text-white transition-all hover:scale-[1.02] active:scale-95 disabled:cursor-not-allowed disabled:opacity-50"
+                className="w-full rounded-xl bg-gradient-to-r from-[#F13BB5] to-[#B529A0] px-8 py-4 font-bold text-white shadow-[0_12px_32px_rgba(241,59,181,0.18)] transition-all hover:scale-[1.02] active:scale-95 disabled:cursor-not-allowed disabled:opacity-50"
               >
                 {isSubmitting ? 'Sending...' : 'Send Message'}
               </button>
@@ -167,32 +167,32 @@ export function Support() {
                 <motion.div
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
-                  className="text-center font-semibold text-emerald-400"
+                  className="text-center font-semibold text-[#F576CD]"
                 >
                   ✓ Message sent successfully! We&apos;ll get back to you soon.
                 </motion.div>
               )}
             </form>
 
-            <div className="mt-8 border-t border-emerald-100 pt-8">
-              <p className="mb-4 text-center text-sm text-slate-500">Or email us directly at</p>
+            <div className="mt-8 border-t border-white/10 pt-8">
+              <p className="mb-4 text-center text-sm text-[#81798F]">Or email us directly at</p>
               <a
                 href={`mailto:${site.company.email}`}
-                className="block text-center text-lg font-semibold text-slate-900 transition-colors hover:text-[#62C743]"
+                className="block text-center text-lg font-semibold text-white transition-colors hover:text-[#F13BB5]"
               >
                 {site.company.email}
               </a>
             </div>
 
-            <div className="mt-8 border-t border-emerald-100 pt-8">
-              <p className="mb-4 text-center text-sm font-semibold text-slate-500">
+            <div className="mt-8 border-t border-white/10 pt-8">
+              <p className="mb-4 text-center text-sm font-semibold text-[#81798F]">
                 Legal Information
               </p>
               <div className="flex flex-wrap justify-center gap-6 text-sm">
-                <a href="/legal/privacy" className="font-medium text-slate-600 hover:text-slate-900">
+                <a href="/legal/privacy" className="font-medium text-[#AAA1B8] hover:text-white">
                   Privacy Policy
                 </a>
-                <a href="/legal/terms" className="font-medium text-slate-600 hover:text-slate-900">
+                <a href="/legal/terms" className="font-medium text-[#AAA1B8] hover:text-white">
                   Terms of Service
                 </a>
               </div>

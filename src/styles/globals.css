@@ -3,8 +3,57 @@
 html,
 body {
   overflow-x: hidden;
-  background: #ffffff;
-  color: #0f172a;
+  background: #090711;
+  color: #f8f5fb;
+}
+
+/* Legal documents keep their approved copy while inheriting the OnlyHer palette. */
+.legal-document .bg-white {
+  background-color: #15101f !important;
+}
+
+.legal-document .bg-emerald-50 {
+  background-color: rgba(109, 36, 104, 0.2) !important;
+}
+
+.legal-document .border-slate-200,
+.legal-document .border-emerald-100,
+.legal-document .border-emerald-200 {
+  border-color: rgba(241, 166, 221, 0.16) !important;
+}
+
+.legal-document .border-emerald-500 {
+  border-color: #f13bb5 !important;
+}
+
+.legal-document .text-slate-900 {
+  color: #ffffff !important;
+}
+
+.legal-document .text-slate-700 {
+  color: #d6cddf !important;
+}
+
+.legal-document .text-slate-600 {
+  color: #aaa1b8 !important;
+}
+
+.legal-document .text-emerald-600,
+.legal-document .text-emerald-700 {
+  color: #f576cd !important;
+}
+
+.legal-document .bg-emerald-500 {
+  background-color: #f13bb5 !important;
+}
+
+.legal-document .from-emerald-500 {
+  --tw-gradient-from: #f13bb5 var(--tw-gradient-from-position) !important;
+  --tw-gradient-to: rgb(241 59 181 / 0) var(--tw-gradient-to-position) !important;
+}
+
+.legal-document .to-lime-500 {
+  --tw-gradient-to: #6d2468 var(--tw-gradient-to-position) !important;
 }
 
 /* Override font-bold to use 600 instead of 700 */
@@ -39,15 +88,15 @@ body {
 }
 
 ::selection {
-  background: rgba(98, 199, 67, 0.35);
-  color: #0f172a;
+  background: rgba(241, 59, 181, 0.38);
+  color: #ffffff;
 }
 
 body {
   background-image:
-    radial-gradient(circle at top, rgba(98, 199, 67, 0.14), transparent 28%),
-    radial-gradient(circle at 80% 0%, rgba(85, 201, 54, 0.08), transparent 22%),
-    linear-gradient(180deg, #ffffff 0%, #f6fff2 100%);
+    radial-gradient(circle at top, rgba(241, 59, 181, 0.13), transparent 28%),
+    radial-gradient(circle at 80% 0%, rgba(109, 36, 104, 0.16), transparent 24%),
+    linear-gradient(180deg, #090711 0%, #100a18 100%);
 }
 
 /* Smooth scroll behavior */

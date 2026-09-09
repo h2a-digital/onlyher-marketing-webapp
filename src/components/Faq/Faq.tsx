@@ -24,9 +24,9 @@ export function Faq() {
     <section
       id="faq"
       aria-labelledby="faq-heading"
-      className="relative overflow-hidden bg-white py-24"
+      className="relative overflow-hidden bg-[#0F0A17] py-24"
     >
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(98,199,67,0.08),transparent_30%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(241,59,181,0.1),transparent_32%)]" />
 
       <div className="relative mx-auto max-w-screen-2xl px-4 sm:px-6 lg:px-8">
         <motion.div
@@ -36,12 +36,12 @@ export function Faq() {
           transition={{ duration: 0.6 }}
           className="mb-16 text-center"
         >
-          <div className="mb-4 text-5xl">❓</div>
-          <h2 id="faq-heading" className="mb-4 text-4xl font-black text-slate-900 md:text-5xl">
+          <div className="mb-4 text-4xl text-[#F13BB5]">?</div>
+          <h2 id="faq-heading" className="mb-4 text-4xl font-black text-white md:text-5xl">
             Questions, Answered
           </h2>
-          <p className="mx-auto max-w-2xl text-xl font-medium text-slate-600">
-            Everything you need to know before you start logging meals.
+          <p className="mx-auto max-w-2xl text-xl font-medium text-[#AAA1B8]">
+            Everything you need to know before meeting your new companion.
           </p>
         </motion.div>
 
@@ -59,26 +59,26 @@ export function Faq() {
                 <div
                   className={`overflow-hidden rounded-3xl border-2 transition-all duration-300 ${
                     isOpen
-                      ? 'border-[#62C743]/30 bg-white shadow-lg shadow-emerald-100/40'
-                      : 'border-emerald-100 bg-white hover:border-[#62C743]/20 hover:shadow-md'
+                      ? 'border-[#F13BB5]/35 bg-[#181121] shadow-lg shadow-[#6D2468]/15'
+                      : 'border-white/10 bg-[#15101F] hover:border-[#F13BB5]/25 hover:shadow-md'
                   }`}
                 >
                   <button
                     onClick={() => toggleFaq(index)}
                     aria-expanded={isOpen}
                     aria-controls={`faq-answer-${index}`}
-                    className="flex w-full items-start justify-between gap-4 px-6 py-5 text-left focus-visible:ring-2 focus-visible:ring-[#62C743] focus-visible:ring-offset-2 focus-visible:ring-offset-white md:px-8 md:py-6"
+                    className="flex w-full items-start justify-between gap-4 px-6 py-5 text-left focus-visible:ring-2 focus-visible:ring-[#F13BB5] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0F0A17] md:px-8 md:py-6"
                   >
-                    <span className="flex-1 text-lg font-bold text-slate-900 md:text-xl">
+                    <span className="flex-1 text-lg font-bold text-white md:text-xl">
                       {item.q}
                     </span>
                     <div
                       className={`mt-1 flex h-8 w-8 shrink-0 items-center justify-center rounded-full transition-all duration-300 ${
-                        isOpen ? 'rotate-180 bg-[#62C743]' : 'bg-emerald-100'
+                        isOpen ? 'rotate-180 bg-[#F13BB5]' : 'bg-white/10'
                       }`}
                     >
                       <svg
-                        className={`h-5 w-5 transition-colors ${isOpen ? 'text-white' : 'text-slate-500'}`}
+                        className={`h-5 w-5 transition-colors ${isOpen ? 'text-white' : 'text-[#AAA1B8]'}`}
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
@@ -99,7 +99,7 @@ export function Faq() {
                     transition={{ duration: 0.3, ease: 'easeInOut' }}
                     className="overflow-hidden"
                   >
-                    <div className="px-6 pb-6 text-base leading-relaxed text-slate-600 md:px-8 md:pb-8 md:text-lg">
+                    <div className="px-6 pb-6 text-base leading-relaxed text-[#AAA1B8] md:px-8 md:pb-8 md:text-lg">
                       {item.a}
                     </div>
                   </motion.div>
@@ -117,10 +117,10 @@ export function Faq() {
           transition={{ delay: 0.4 }}
           className="mt-16 text-center"
         >
-          <p className="mb-4 text-lg text-slate-600">Still have questions?</p>
+          <p className="mb-4 text-lg text-[#AAA1B8]">Still have questions?</p>
           <a
             href="#support"
-            className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#62C743] to-[#55C936] px-8 py-4 font-bold text-white transition-all duration-300 hover:scale-105 focus-visible:ring-2 focus-visible:ring-[#62C743] focus-visible:ring-offset-2 focus-visible:ring-offset-white active:scale-95"
+            className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#F13BB5] to-[#B529A0] px-8 py-4 font-bold text-white shadow-[0_12px_32px_rgba(241,59,181,0.22)] transition-all duration-300 hover:scale-105 focus-visible:ring-2 focus-visible:ring-[#F13BB5] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0F0A17] active:scale-95"
           >
             Get in Touch
             <span>→</span>

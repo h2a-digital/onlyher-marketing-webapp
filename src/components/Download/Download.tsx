@@ -7,19 +7,19 @@ export function Download() {
   return (
     <section
       id="download"
-      className="relative overflow-hidden bg-gradient-to-br from-white via-[#f8fff5] to-[#eefbe9] py-32"
+      className="relative overflow-hidden bg-gradient-to-br from-[#100918] via-[#160C20] to-[#240C29] py-32"
     >
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden opacity-35">
         <motion.div
           animate={{ y: [0, -20, 0], x: [0, 10, 0] }}
           transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut' }}
-          className="absolute top-20 left-10 h-24 w-32 rounded-3xl bg-[#62C743]/20 blur-2xl"
+          className="absolute top-20 left-10 h-24 w-32 rounded-3xl bg-[#F13BB5]/30 blur-2xl"
         />
         <motion.div
           animate={{ y: [0, 20, 0], x: [0, -15, 0] }}
           transition={{ duration: 10, repeat: Infinity, ease: 'easeInOut' }}
-          className="absolute right-20 bottom-20 h-32 w-40 rounded-full bg-[#55C936]/20 blur-2xl"
+          className="absolute right-20 bottom-20 h-32 w-40 rounded-full bg-[#6D2468]/45 blur-2xl"
         />
       </div>
 
@@ -35,23 +35,21 @@ export function Download() {
             whileInView={{ scale: 1 }}
             viewport={{ once: true }}
             transition={{ type: 'spring', delay: 0.2 }}
-            className="mb-8 flex justify-center gap-4 text-6xl"
+            className="mb-8 flex justify-center gap-4 text-5xl text-[#F13BB5]"
           >
-            <span>📱</span>
-            <span>🥗</span>
+            <span>✦</span>
           </motion.div>
 
-          <h2 className="mb-6 text-5xl font-black text-slate-900 md:text-6xl lg:text-7xl">
-            Ready to track
+          <h2 className="mb-6 text-5xl font-black text-white md:text-6xl lg:text-7xl">
+            Your perfect AI girlfriend
             <br />
-            <span className="bg-gradient-to-r from-[#BFF0A8] via-[#62C743] to-[#55C936] bg-clip-text text-transparent">
-              calories smarter?
+            <span className="bg-gradient-to-r from-[#FF92D9] via-[#F13BB5] to-[#A855F7] bg-clip-text text-transparent">
+              is waiting.
             </span>
           </h2>
 
-          <p className="mx-auto mb-12 max-w-2xl text-xl font-medium text-slate-600 md:text-2xl">
-            Take a photo, log your meal, and stay on track with effortless calorie and macro
-            tracking.
+          <p className="mx-auto mb-12 max-w-2xl text-xl font-medium text-[#BDB5CB] md:text-2xl">
+            Chat, flirt, call, and discover a companion who matches your personality.
           </p>
 
           <div className="mb-12 flex flex-col justify-center gap-4 sm:flex-row">
@@ -70,15 +68,15 @@ export function Download() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.4 }}
-            className="flex flex-wrap items-center justify-center gap-8 text-sm text-slate-600"
+            className="flex flex-wrap items-center justify-center gap-8 text-sm text-[#AAA1B8]"
           >
             <div className="flex items-center gap-2">
               <span className="text-2xl">⭐</span>
-              <span className="font-semibold">Clear calorie breakdowns</span>
+              <span className="font-semibold">Natural conversations</span>
             </div>
             <div className="flex items-center gap-2">
               <span className="text-2xl">📱</span>
-              <span className="font-semibold">Progress-focused logging</span>
+              <span className="font-semibold">Characters made personal</span>
             </div>
             {/* <div className="flex items-center gap-2">
               <span className="text-2xl">🔒</span>

@@ -11,9 +11,9 @@ export function Gallery() {
   return (
     <section
       id="gallery"
-      className="relative overflow-hidden bg-white py-24"
+      className="relative overflow-hidden bg-[#0F0A17] py-24"
     >
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(98,199,67,0.08),transparent_30%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(241,59,181,0.12),transparent_34%)]" />
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
@@ -21,16 +21,17 @@ export function Gallery() {
           viewport={{ once: true }}
           className="relative mb-16 text-center"
         >
-          <h2 className="mb-4 text-4xl font-black text-slate-900 md:text-5xl">
-            A Look Inside AppyDiet
+          <h2 className="mb-4 text-4xl font-black text-white md:text-5xl">
+            Step Into OnlyHer
           </h2>
-          <p className="mx-auto max-w-2xl text-xl text-slate-600">
-            Preview the flow from meal scan to your daily log, goals, planner, and progress.
+          <p className="mx-auto max-w-2xl text-xl text-[#AAA1B8]">
+            Discover characters, share intimate conversations, call her, and shape a personality
+            that matches your energy.
           </p>
         </motion.div>
 
         <div className="mx-auto max-w-sm">
-          <div className="relative rounded-[3rem] bg-[#11111A] p-3 shadow-2xl shadow-slate-900/30">
+          <div className="relative rounded-[3rem] border border-white/10 bg-[#11111A] p-3 shadow-[0_35px_90px_rgba(0,0,0,0.55),0_0_60px_rgba(241,59,181,0.12)]">
             <div className="relative aspect-[9/19] overflow-hidden rounded-[2.5rem] bg-[#09090F]">
               <AnimatePresence mode="wait">
                 <motion.div
@@ -59,8 +60,8 @@ export function Gallery() {
                 setSelectedIndex((prev) => (prev - 1 + gallery.length) % gallery.length)
               }
               type="button"
-              className="absolute top-1/2 -left-16 flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full border border-emerald-100 bg-white text-slate-700 shadow-lg transition-colors hover:bg-[#f8fff5] hover:text-slate-900"
-              aria-label="Previous"
+              className="absolute top-1/2 -left-16 hidden h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full border border-white/10 bg-[#1B1526] text-[#D6CDDF] shadow-lg transition-colors hover:border-[#F13BB5]/30 hover:text-white sm:flex"
+              aria-label="Previous app screenshot"
             >
               <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path
@@ -74,8 +75,8 @@ export function Gallery() {
             <button
               onClick={() => setSelectedIndex((prev) => (prev + 1) % gallery.length)}
               type="button"
-              className="absolute top-1/2 -right-16 flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full border border-emerald-100 bg-white text-slate-700 shadow-lg transition-colors hover:bg-[#f8fff5] hover:text-slate-900"
-              aria-label="Next"
+              className="absolute top-1/2 -right-16 hidden h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full border border-white/10 bg-[#1B1526] text-[#D6CDDF] shadow-lg transition-colors hover:border-[#F13BB5]/30 hover:text-white sm:flex"
+              aria-label="Next app screenshot"
             >
               <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path
@@ -97,10 +98,10 @@ export function Gallery() {
                 type="button"
                 className={`transition-all ${
                   selectedIndex === index
-                    ? 'h-3 w-8 rounded-full bg-[#62C743]'
-                    : 'h-3 w-3 rounded-full bg-emerald-200 hover:bg-emerald-300'
+                    ? 'h-3 w-8 rounded-full bg-[#F13BB5]'
+                    : 'h-3 w-3 rounded-full bg-[#3C324A] hover:bg-[#6D2468]'
                 }`}
-                aria-label={`View image ${index + 1}`}
+                aria-label={`View app screenshot ${index + 1}: ${gallery[index].alt}`}
               />
             ))}
           </div>

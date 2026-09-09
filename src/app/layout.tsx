@@ -12,30 +12,30 @@ export const metadata: Metadata = {
     template: `%s | ${site.app.name}`,
   },
   description:
-    'Take a photo of your meal, let AI estimate calories and macros, and track your daily nutrition without the usual friction.',
+    'Meet your perfect AI girlfriend. Chat, flirt, roleplay, make immersive voice calls, and create a virtual companion with a personality made for you.',
   keywords: [
-    'calorie counter',
-    'macro tracker',
-    'ai meal scanner',
-    'food tracker',
-    'barcode scanner',
-    'meal logging',
-    'nutrition goals',
-    'meal planner',
-    'nutrition analytics',
-    'AppyDiet',
+    'AI girlfriend',
+    'virtual companion',
+    'AI companion',
+    'AI girlfriend chat',
+    'AI voice calls',
+    'romantic AI chat',
+    'custom AI girlfriend',
+    'AI roleplay',
+    'OnlyHer',
+    'AI Girlfriend: OnlyHer',
   ],
   authors: [{ name: site.company.name, url: 'https://h2adigital.com' }],
   creator: site.company.name,
   applicationName: site.app.name,
-  category: 'Health & Fitness',
+  category: 'Entertainment',
   openGraph: {
     type: 'website',
     locale: 'en_US',
     url: env.SITE_URL,
     title: `${site.app.name} - ${site.app.tagline}`,
     description:
-      'Track calories and macros with AI meal scanning, food search, barcode scanning, and personalized meal plans.',
+      'Choose your girl, start a natural conversation, call her, and build an AI companion experience that feels uniquely yours.',
     siteName: site.app.name,
     images: [
       {
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: `${site.app.name} - ${site.app.tagline}`,
     description:
-      'Take a photo. Know your calories. Stay on track with effortless AI meal tracking.',
+      'Chat, flirt, call, and create a connection with an AI girlfriend who matches your personality.',
     images: ['/icon0.svg'],
   },
   robots: {

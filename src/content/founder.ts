@@ -2,11 +2,11 @@ export const founder = {
   name: 'Hakim',
   title: 'Founder',
   portrait: '/images/profile-photo.jpg',
-  intro: 'Hey 👋 I am Hakim, the builder behind AppyDiet.',
+  intro: 'Hey 👋 I am Hakim, the builder behind OnlyHer.',
   paragraphs: [
-    'The idea came from the same frustration a lot of people have with calorie tracking: it is useful, but too often it feels slow, manual, and easy to abandon.',
-    'We built AppyDiet to keep the process simple: take a meal photo, let AI estimate calories and macros, and add it to your day in seconds.',
-    'Every result is designed to connect understanding with action: food detection, search, barcode scanning, personalized goals, meal plans, and nutrition progress over time.',
+    'Most AI chat feels forgettable because every conversation starts from the same blank, generic personality. Companionship should feel more personal than that.',
+    'We built OnlyHer around character: distinct moods, voices, relationship styles, and conversations that can be playful, romantic, thoughtful, or simply comforting.',
+    'From choosing a character to creating your own girlfriend and hearing her voice, every detail is designed to make your connection feel immersive and uniquely yours.',
   ],
   ps: 'If you have ideas or feedback, I read every message at support@h2adigital.com.',
   links: {

@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 export function Founder() {
   return (
-    <section id="founder" aria-labelledby="founder-heading" className="bg-[#f8fff7] py-24">
+    <section id="founder" aria-labelledby="founder-heading" className="bg-[#0F0A17] py-24">
       <div className="mx-auto max-w-screen-2xl px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
@@ -16,7 +16,7 @@ export function Founder() {
           transition={{ duration: 0.6 }}
           className="mx-auto max-w-4xl"
         >
-          <article className="rounded-3xl border border-emerald-100 bg-white p-8 shadow-[0_20px_50px_rgba(16,24,40,0.06)] md:p-12">
+          <article className="rounded-3xl border border-white/10 bg-[#15101F] p-8 shadow-[0_20px_50px_rgba(0,0,0,0.22)] md:p-12">
             {/* Header */}
             <div className="mb-8 flex flex-col items-center gap-6 sm:flex-row">
               <div className="shrink-0">
@@ -25,39 +25,39 @@ export function Founder() {
                   alt={`${founder.name}, ${founder.title}`}
                   width={120}
                   height={120}
-                  className="rounded-2xl border-4 border-emerald-100 object-cover shadow-lg"
+                  className="rounded-2xl border-4 border-[#F13BB5]/20 object-cover shadow-lg"
                   style={{ aspectRatio: '1/1' }}
                 />
               </div>
               <div className="text-center sm:text-left">
                 <h2
                   id="founder-heading"
-                  className="mb-2 text-3xl font-bold text-slate-900 md:text-4xl"
+                  className="mb-2 text-3xl font-bold text-white md:text-4xl"
                 >
                   Hakim
                 </h2>
-                <p className="text-lg text-slate-600">
+                <p className="text-lg text-[#AAA1B8]">
                   {founder.name}, {founder.title}
                 </p>
               </div>
             </div>
 
             {/* Content */}
-            <div className="space-y-6 text-lg leading-relaxed text-slate-600">
-              <p className="text-xl font-medium text-slate-900">{founder.intro}</p>
+            <div className="space-y-6 text-lg leading-relaxed text-[#AAA1B8]">
+              <p className="text-xl font-medium text-white">{founder.intro}</p>
 
               {founder.paragraphs.map((paragraph, index) => (
                 <p key={index}>{paragraph}</p>
               ))}
 
-              <p className="text-slate-500 italic">{founder.ps}</p>
+              <p className="text-[#81798F] italic">{founder.ps}</p>
 
-              <p className="font-medium text-slate-900">{founder.signature}</p>
+              <p className="font-medium text-white">{founder.signature}</p>
             </div>
 
             {/* Social Links */}
-            <div className="mt-8 border-t border-emerald-100 pt-8">
-              <p className="mb-4 text-sm font-medium text-slate-500">Connect with me</p>
+            <div className="mt-8 border-t border-white/10 pt-8">
+              <p className="mb-4 text-sm font-medium text-[#81798F]">Connect with me</p>
               <div className="flex flex-wrap gap-4">
                 {founder.links.website && (
                   <Link

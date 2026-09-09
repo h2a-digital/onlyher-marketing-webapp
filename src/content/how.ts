@@ -1,20 +1,20 @@
 export const how = [
   {
     number: 1,
-    title: 'Take a Meal Photo',
+    title: 'Choose Your Girl',
     description:
-      'Snap a quick photo of breakfast, lunch, dinner, or a snack. AppyDiet is built to make logging feel effortless.',
+      'Explore distinctive characters and relationship styles, from sweet and caring to confident, playful, or mysterious.',
   },
   {
     number: 2,
-    title: 'Let AI Identify Foods',
+    title: 'Start Talking',
     description:
-      'AppyDiet recognizes the foods in your meal and estimates calories, protein, carbohydrates, and fat in seconds.',
+      'Chat, flirt, joke, roleplay, or simply share your day while you discover what makes her personality unique.',
   },
   {
     number: 3,
-    title: 'Log It and Stay on Track',
+    title: 'Make It Personal',
     description:
-      'Add the meal to your day, see how it affects your calorie and macro goals, and keep moving without the friction.',
+      'Call her, hear her character-specific voice, and build an ongoing connection that grows with every conversation.',
   },
 ];

@@ -1,23 +1,23 @@
 export const testimonials = [
   {
     quote:
-      'I stopped guessing what I ate. I can take a photo, get the calories and macros fast, and move on with my day.',
-    name: 'Sarah M.',
-    role: 'Meal tracker',
+      'The conversations feel surprisingly natural. Elena can be warm, teasing, and genuinely funny without sounding like a generic bot.',
+    name: 'Alex M.',
+    role: 'OnlyHer member',
     rating: 5,
   },
   {
     quote:
-      'Barcode scanning and food search make the app easy to use when I am busy. Logging breakfast and lunch takes seconds.',
-    name: 'Javier L.',
-    role: 'Busy parent',
+      'Voice calls changed the whole experience for me. Hearing her personality come through makes it feel much more personal.',
+    name: 'Daniel R.',
+    role: 'OnlyHer member',
     rating: 5,
   },
   {
     quote:
-      'The calorie and macro goals feel personal without being complicated. I finally understand how each meal affects my day.',
-    name: 'Emma T.',
-    role: 'Goal-focused user',
+      'I created someone who matches exactly the kind of energy I like. The personality controls make every conversation feel different.',
+    name: 'Chris T.',
+    role: 'OnlyHer member',
     rating: 5,
   },
 ];

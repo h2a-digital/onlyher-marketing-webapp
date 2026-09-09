@@ -1,6 +1,6 @@
 {
-  "name": "AppyDiet",
-  "short_name": "AppyDiet",
+  "name": "OnlyHer",
+  "short_name": "OnlyHer",
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",
@@ -15,7 +15,7 @@
       "purpose": "maskable"
     }
   ],
-  "theme_color": "#ffffff",
-  "background_color": "#ffffff",
+  "theme_color": "#090711",
+  "background_color": "#090711",
   "display": "standalone"
 }

@@ -60,7 +60,7 @@ export function Header() {
     <header
       className={`fixed top-0 right-0 left-0 z-50 transition-all duration-300 ${
         isScrolled || isMobileMenuOpen
-          ? 'border-b border-emerald-100 bg-white/90 shadow-sm backdrop-blur-md'
+          ? 'border-b border-white/10 bg-[#090711]/88 shadow-[0_12px_40px_rgba(0,0,0,0.3)] backdrop-blur-xl'
           : 'bg-transparent'
       }`}
     >
@@ -70,7 +70,7 @@ export function Header() {
           <Link
             href="/"
             onClick={handleLogoClick}
-            className="flex items-center gap-2 text-2xl font-bold text-white transition-colors hover:text-[#BFF0A8]"
+            className="flex items-center gap-2.5 text-2xl font-bold text-white transition-colors hover:text-[#F7A6DD]"
           >
             <Image
               src={'/images/icon.png'}
@@ -78,9 +78,9 @@ export function Header() {
               loading="eager"
               width={48}
               height={48}
-              className="h-12 w-12"
+              className="h-12 w-12 rounded-xl shadow-[0_0_28px_rgba(241,59,181,0.25)]"
             />
-            <span className="text-slate-900">{site.app.name}</span>
+            <span>{site.app.name}</span>
           </Link>
 
           {/* Desktop Nav */}
@@ -90,7 +90,7 @@ export function Header() {
                 key={item.href}
                 href={item.href}
                 onClick={(e) => scrollToSection(e, item.href)}
-                className="text-sm font-medium text-slate-600 transition-colors hover:text-slate-900"
+                className="text-sm font-medium text-[#BDB5CB] transition-colors hover:text-white"
               >
                 {item.label}
               </a>
@@ -98,7 +98,7 @@ export function Header() {
             <a
               href="#download"
               onClick={(e) => scrollToSection(e, '#download')}
-              className="rounded-full bg-gradient-to-r from-[#62C743] to-[#55C936] px-6 py-2.5 text-sm font-semibold text-white transition-all hover:scale-105 active:scale-95"
+              className="rounded-full bg-gradient-to-r from-[#F13BB5] to-[#B529A0] px-6 py-2.5 text-sm font-semibold text-white shadow-[0_10px_30px_rgba(241,59,181,0.25)] transition-all hover:scale-105 hover:shadow-[0_14px_36px_rgba(241,59,181,0.35)] active:scale-95"
             >
               Download App
             </a>
@@ -107,7 +107,7 @@ export function Header() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="p-2 text-slate-900 lg:hidden"
+            className="rounded-lg p-2 text-white transition-colors hover:bg-white/5 lg:hidden"
             aria-label="Toggle menu"
           >
             <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -132,14 +132,14 @@ export function Header() {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <nav className="-mx-4 border-t border-emerald-100 bg-white/95 px-4 py-4 shadow-md backdrop-blur-md sm:-mx-6 sm:px-6 lg:hidden">
+          <nav className="-mx-4 border-t border-white/10 bg-[#0D0915]/95 px-4 py-4 shadow-md backdrop-blur-xl sm:-mx-6 sm:px-6 lg:hidden">
             <div className="flex flex-col gap-4">
               {navItems.map((item) => (
                 <a
                   key={item.href}
                   href={item.href}
                   onClick={(e) => scrollToSection(e, item.href)}
-                  className="text-base font-medium text-slate-600 hover:text-slate-900"
+                  className="text-base font-medium text-[#BDB5CB] hover:text-white"
                 >
                   {item.label}
                 </a>
@@ -147,7 +147,7 @@ export function Header() {
               <a
                 href="#download"
                 onClick={(e) => scrollToSection(e, '#download')}
-                className="rounded-full bg-gradient-to-r from-[#62C743] to-[#55C936] px-6 py-3 text-center text-base font-semibold text-white"
+                className="rounded-full bg-gradient-to-r from-[#F13BB5] to-[#B529A0] px-6 py-3 text-center text-base font-semibold text-white"
               >
                 Download App
               </a>
