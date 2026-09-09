@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://onlyher.h2adigital.com
+
+# Sitemaps
+Sitemap: https://onlyher.h2adigital.com/sitemap.xml
